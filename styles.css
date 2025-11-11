@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_fondo: darkseagreen;
+}
+
+.Pagina_inicio{
+    flex-direction: row;
+    background-color: var(--color_fondo);
+}
+
+.Pagina_inicio__logo{
+    width: 200px;
+    height: 200px;
+}
+
+.Pagina_inicio__ingreso{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
