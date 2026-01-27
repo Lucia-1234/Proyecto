@@ -1,0 +1,119 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* VARIABLES GLOBALES */
+:root {
+    --color-fondo: #a855c7;
+    --color-card: #b566d3;
+    --color-input: #ecd7f3;
+    --color-boton: #f2e7f7;
+    --color-boton-hover: #e0c7ec;
+    --color-texto: #ffffff;
+    --color-placeholder: #6b4b7a;
+    --sombra-card: 0px 10px 25px rgba(0,0,0,0.25);
+    --radio: 6px;
+}
+
+
+/* FONDO GENERAL */
+body {
+    min-height: 100vh;
+    background: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.Pagina_registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Pagina_registro__bienvenida {
+    color: var(--color-texto);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.Pagina_registro img {
+    height: 50px;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* TARJETA */
+.Pagina_registro__main {
+    background: var(--color-card);
+    width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--sombra-card);
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    row-gap: 15px;
+    column-gap: 10px;
+}
+
+/* ICONOS */
+.main_img {
+    width: 22px;
+    align-self: center;
+    justify-self: center;
+}
+
+/* INPUTS */
+.main_campo {
+    height: 45px;
+    border: none;
+    border-radius: var(--radio);
+    padding: 0 12px;
+    background: var(--color-input);
+    font-size: 14px;
+    outline: none;
+}
+
+.main_campo::placeholder {
+    color: var(--color-placeholder);
+}
+
+/* BOTONES */
+.main_boton {
+    grid-column: span 2;
+    border: none;
+    background: none;
+    margin-top: 10px;
+}
+
+.main_boton__enlace {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background: var(--color-boton);
+    border-radius: var(--radio);
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.main_boton__enlace:hover {
+    background: var(--color-boton-hover);
+}
