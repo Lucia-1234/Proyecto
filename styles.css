@@ -1,31 +1,12 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --color_fondo: darkseagreen;
-}
-
-.Pagina_inicio{
-    flex-direction: row;
-    background-color: var(--color_fondo);
-}
-
-.Pagina_inicio__logo{
-    width: 200px;
-    height: 200px;
-}
-
-.Pagina_inicio__ingreso{
-    display: flex;
-    width: 500px;
-    flex-direction: column;
-} */
-
 :root {
-    --color_fondo: #1CA538; /* verde suave */
+    --color_fondo: #6dbf4b; /* verde suave */
+    --color-morado: #b04bc6;
     --color_principal: #2F4F4F; /* verde oscuro elegante */
     --color_secundario: #ffffff; /* blanco */
     --color_boton: #4CAF50; /* verde vibrante */
@@ -35,7 +16,11 @@
 
 body {
     font-family: var(--fuente_principal);
-    background-color: var(--color_fondo);
+    background: linear-gradient(
+    to bottom,
+    var(--color_fondo),
+    var(--color-morado)
+  );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +73,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.Pagina_inicio__boton a {
+.Pagina_inicio__boton .Pagina_inicio__enlace{
     text-decoration: none;
     color: var(--color_secundario);
     font-weight: bold;
