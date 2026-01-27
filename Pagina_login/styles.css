@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --color-verde: #6dbf4b;
+  --color-morado: #b04bc6;
+  --color-blanco: #ffffff;
+  --color-gris-input: #f1eef4;
+  --color-texto-input: #333333;
+  --radio: 8px;
+  --fuente: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--fuente);
+}
+
+/* Encabezado */
+header {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  color: var(--color-blanco);
+}
+
+.Pagina_login__bienvenida {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Fondo principal */
+main {
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--color-verde),
+    var(--color-morado)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor del login */
+.Pagina_login__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 4rem;
+}
+
+/* Avatar */
+.header_img .avatar {
+  width: 120px;
+  margin: 20px;
+}
+
+/* Campos de texto */
+.main_campo {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  background: var(--color-gris-input);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radio);
+}
+
+.main_campo__icono {
+  width: 18px;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.main_campo input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.95rem;
+  color: var(--color-texto-input);
+}
+
+/* Botón */
+.footer_boton {
+  margin-top: 10px;
+  border: none;
+  background: var(--color-blanco);
+  padding: 0.5rem 1.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer_boton__enlace {
+  text-decoration: none;
+  color: var(--color-texto-input);
+  font-weight: 600;
+}
+
